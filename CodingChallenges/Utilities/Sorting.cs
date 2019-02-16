@@ -6,25 +6,25 @@ namespace CodingChallenges.Utilities
 {
     static class Sorting
     {
-        public static int[] RandomIntArray (int count)
+        public static int[] RandomIntArray (int count, int range)
         {
             int[] data = new int[count];
             Random generator = new Random();
             for (int i = 0; i < count; i++)
             {
-                data[i] = generator.Next(0, 1000);
+                data[i] = generator.Next(0, range);
             }
 
             return data;
         }
 
-        public static List<int> RandomIntList(int count)
+        public static List<int> RandomIntList(int count, int range)
         {
             List<int> data = new List<int>();
             Random generator = new Random();
             for (int i = 0; i < count; i++)
             {
-                data.Add(generator.Next(0, 1000));
+                data.Add(generator.Next(0, range));
             }
 
             return data;

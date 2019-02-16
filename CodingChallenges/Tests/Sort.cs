@@ -12,27 +12,27 @@ namespace CodingChallenges.Tests
         {
             Log.Title("Bubble Sort");
 
-            int[] sortedArray = BubbleSort.SortArray(Sorting.RandomIntArray(100), true);
+            int[] sortedArray = BubbleSort.SortArray(Sorting.RandomIntArray(100, 1000), true);
 
-            List<int> sortedList = BubbleSort.SortList(Sorting.RandomIntList(100), false);
+            List<int> sortedList = BubbleSort.SortList(Sorting.RandomIntList(100, 1000), false);
         }
 
         public static void Selection()
         {
             Log.Title("Selection Sort");
             
-            int[] sortedArray = SelectionSort.SortArray(Sorting.RandomIntArray(100), true);
+            int[] sortedArray = SelectionSort.SortArray(Sorting.RandomIntArray(100, 1000), true);
 
-            List<int> sortedList = SelectionSort.SortList(Sorting.RandomIntList(100), false);
+            List<int> sortedList = SelectionSort.SortList(Sorting.RandomIntList(100, 1000), false);
         }
 
         public static void Insertion()
         {
             Log.Title("Insterion Sort");
 
-            int[] sortedArray = InsertionSort.SortArray(Sorting.RandomIntArray(100), true);
+            int[] sortedArray = InsertionSort.SortArray(Sorting.RandomIntArray(100, 1000), true);
 
-            List<int> sortedList = InsertionSort.SortList(Sorting.RandomIntList(100), false);
+            List<int> sortedList = InsertionSort.SortList(Sorting.RandomIntList(100, 1000), false);
         }
     }
 }
