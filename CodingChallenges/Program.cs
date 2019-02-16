@@ -8,7 +8,14 @@ namespace CodingChallenges
     {
         static void Main(string[] args)
         {
+            /* Sorting Algorithm Tests
+            Tests.SortBubble();
+            Utilities.LogSpacer();
             Tests.SortSelection();
+            Utilities.LogSpacer();
+            Tests.SortInsertion();
+            */
+
             Console.ReadLine();
         }
 
