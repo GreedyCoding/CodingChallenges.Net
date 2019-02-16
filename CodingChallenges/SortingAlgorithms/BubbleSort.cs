@@ -8,23 +8,29 @@ namespace CodingChallenges.SortingAlgorithms
     static class BubbleSort
     {
 
-        public static int[] SortArray(int[] toSort, bool ascending)
+        public static int[] SortArray(int[] toSort, bool ascending, bool logging = true)
         {  
             //Getting the Array to Sort
             int[] _result = toSort;
 
             bool _ascending = ascending;
+            if (logging)
+            {
+                //Logging the array contents to the console
+                Console.WriteLine("This number sequence is going to be sorted:");
+                Log.ArrayContents(toSort);
 
-            //Logging the array contents to the console
-            Console.WriteLine("This number sequence is going to be sorted:");
-            Log.ArrayContents(toSort);
+            }
 
             //Getting the size of the array to calculate the maximum needed iterations for the bubble sort
             int _size = toSort.Length;
             int _iterations = (_size * (_size - 1)) / 2;
             
-            Console.WriteLine($"The maximum of iterations needed for this lenght would be '{_iterations}'");
-            Console.WriteLine("------------------------------------------");
+            if (logging)
+            {
+                Console.WriteLine($"The maximum of iterations needed for this lenght would be '{_iterations}'");
+                Console.WriteLine("------------------------------------------");
+            }
 
             int _iterationCount = 0; //Keeps track of the iterations taken
 
@@ -71,22 +77,24 @@ namespace CodingChallenges.SortingAlgorithms
                 if (_swaps == 0) break;
             }
 
-            //Log the result
-            if (ascending)
+            if (logging)
             {
-                Console.WriteLine("Here is the Array sorted in ascending order:");
+                //Log the result
+                if (ascending)
+                {
+                    Console.WriteLine("Here is the Array sorted in ascending order:");
+                }
+                else
+                {
+                    Console.WriteLine("Here is the Array sorted in descending order:");
+                }
+
+                Log.ArrayContents(_result);
+
+                //Log how many iterations were needed to fully sort the array
+                Console.WriteLine($"The iterations needed to BubbleSort this array were '{_iterationCount}'");
+                Log.Line(ConsoleColor.Yellow);
             }
-            else
-            {
-                Console.WriteLine("Here is the Array sorted in descending order:");
-            }
-
-            Log.ArrayContents(_result);
-
-            //Log how many iterations were needed to fully sort the array
-            Console.WriteLine($"The iterations needed to BubbleSort this array were '{_iterationCount}'");
-            Log.Line(ConsoleColor.Yellow);
-
             return _result;
         }
 
