@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using CodingChallenges.SortingAlgorithm;
+using CodingChallenges.SortingAlgorithms;
 
 namespace CodingChallenges
 {
@@ -8,7 +8,7 @@ namespace CodingChallenges
     {
         static void Main(string[] args)
         {
-            Tests.SortBubble();
+            Tests.SortSelection();
             Console.ReadLine();
         }
 
