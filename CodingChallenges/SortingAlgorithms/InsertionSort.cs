@@ -60,7 +60,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Log how many iterations were needed to fully sort the array
             Console.WriteLine($"The iterations needed to SelectionSort this array were '{_iterationCount}'");
-            Console.WriteLine();
+            Log.Line(ConsoleColor.Yellow);
 
             return _result;
         }

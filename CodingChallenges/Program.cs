@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using CodingChallenges.SortingAlgorithms;
 using CodingChallenges.Utilities;
+
 
 namespace CodingChallenges
 {
@@ -9,12 +9,12 @@ namespace CodingChallenges
     {
         static void Main(string[] args)
         {
-            // Sorting Algorithm Tests
-            Tests.SortBubble();
-            Log.Line();
-            Tests.SortSelection();
-            Log.Line();
-            Tests.SortInsertion();
+            //* Sorting Algorithm Tests
+            Tests.Sort.Bubble();
+            Log.Line(ConsoleColor.Magenta);
+            Tests.Sort.Selection();
+            Log.Line(ConsoleColor.Magenta);
+            Tests.Sort.Insertion();
             //*/
 
             Console.ReadLine();

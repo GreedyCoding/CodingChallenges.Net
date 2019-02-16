@@ -4,11 +4,11 @@ using System.Text;
 using CodingChallenges.Utilities;
 using CodingChallenges.SortingAlgorithms;
 
-namespace CodingChallenges
+namespace CodingChallenges.Tests
 { 
-    static class Tests
+    internal static class Sort
     {
-        public static void SortBubble()
+        public static void Bubble()
         {
             Log.Title("Bubble Sort");
 
@@ -17,7 +17,7 @@ namespace CodingChallenges
             List<int> sortedList = BubbleSort.SortList(Sorting.RandomIntList(100), false);
         }
 
-        public static void SortSelection()
+        public static void Selection()
         {
             Log.Title("Selection Sort");
             
@@ -26,7 +26,7 @@ namespace CodingChallenges
             List<int> sortedList = SelectionSort.SortList(Sorting.RandomIntList(100), false);
         }
 
-        public static void SortInsertion()
+        public static void Insertion()
         {
             Log.Title("Insterion Sort");
 
