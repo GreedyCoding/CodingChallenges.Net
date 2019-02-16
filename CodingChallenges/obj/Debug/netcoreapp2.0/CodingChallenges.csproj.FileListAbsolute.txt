@@ -1,0 +1,11 @@
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\bin\Debug\netcoreapp2.0\CodingChallenges.deps.json
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\bin\Debug\netcoreapp2.0\CodingChallenges.runtimeconfig.json
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\bin\Debug\netcoreapp2.0\CodingChallenges.runtimeconfig.dev.json
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\bin\Debug\netcoreapp2.0\CodingChallenges.dll
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\bin\Debug\netcoreapp2.0\CodingChallenges.pdb
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\obj\Debug\netcoreapp2.0\CodingChallenges.csprojAssemblyReference.cache
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\obj\Debug\netcoreapp2.0\CodingChallenges.csproj.CoreCompileInputs.cache
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\obj\Debug\netcoreapp2.0\CodingChallenges.AssemblyInfoInputs.cache
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\obj\Debug\netcoreapp2.0\CodingChallenges.AssemblyInfo.cs
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\obj\Debug\netcoreapp2.0\CodingChallenges.dll
+D:\Repositories\DotNet\CodingChallenges.Net\CodingChallenges\obj\Debug\netcoreapp2.0\CodingChallenges.pdb
