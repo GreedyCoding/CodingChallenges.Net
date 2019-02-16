@@ -15,7 +15,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Logging the array contents to the console
             Console.WriteLine("This number sequence is going to be sorted:");
-            Utilities.LogContents(toSort);
+            Utilities.LogArrayContents(toSort);
 
             int _iterationCount = 0;    //Keeps track of the iterations taken
             int lowestIndex;            //Keeps track of the lowerst inddex
@@ -54,7 +54,21 @@ namespace CodingChallenges.SortingAlgorithms
 
             }
 
-            Utilities.LogContents(_result);
+            //Log the result
+            if (ascending)
+            {
+                Console.WriteLine("Here is the Array sorted in ascending order:");
+            }
+            else
+            {
+                Console.WriteLine("Here is the Array sorted in descending order:");
+            }
+
+            Utilities.LogArrayContents(_result);
+
+            //Log how many iterations were needed to fully sort the array
+            Console.WriteLine($"The iterations needed to SelectionSort this array were '{_iterationCount}'");
+            Console.WriteLine();
 
             return _result;
         }
@@ -69,7 +83,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Logging the array contents to the console
             Console.WriteLine("This number sequence is going to be sorted:");
-            Utilities.LogContents(toSort);
+            Utilities.LogListContents(toSort);
 
             int _iterationCount = 0;    //Keeps track of the iterations taken
             int lowestIndex;            //Keeps track of the lowerst inddex
@@ -103,19 +117,30 @@ namespace CodingChallenges.SortingAlgorithms
                 }
                 _iterationCount++;
 
+
                 //Set the lowest index element to the front so we can start iterating at the next element
                 Utilities.SwapElements(_result, i, lowestIndex);
 
+
             }
 
-            Utilities.LogContents(_result);
+            //Log the result
+            if (ascending)
+            {
+                Console.WriteLine("Here is the Array sorted in ascending order:");
+            }
+            else
+            {
+                Console.WriteLine("Here is the Array sorted in descending order:");
+            }
+
+            Utilities.LogListContents(_result);
+
+            //Log how many iterations were needed to fully sort the array
+            Console.WriteLine($"The iterations needed to SelectionSort this list were '{_iterationCount}'");
 
             return _result;
         }
-
-
-
-
     }
 }
 
