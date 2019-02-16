@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CodingChallenges.Utilities;
 
 namespace CodingChallenges.SortingAlgorithms
 {
@@ -16,7 +17,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Logging the array contents to the console
             Console.WriteLine("This number sequence is going to be sorted:");
-            Utilities.LogArrayContents(toSort);
+            Log.ArrayContents(toSort);
 
             //Getting the size of the array to calculate the maximum needed iterations for the bubble sort
             int _size = toSort.Length;
@@ -80,7 +81,7 @@ namespace CodingChallenges.SortingAlgorithms
                 Console.WriteLine("Here is the Array sorted in descending order:");
             }
 
-            Utilities.LogArrayContents(_result);
+            Log.ArrayContents(_result);
 
             //Log how many iterations were needed to fully sort the array
             Console.WriteLine($"The iterations needed to BubbleSort this array were '{_iterationCount}'");
@@ -98,7 +99,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Logging the array contents to the console
             Console.WriteLine("This number sequence is going to be sorted:");
-            Utilities.LogListContents(toSort);
+            Log.ListContents(toSort);
 
             //Getting the size of the array to calculate the maximum needed iterations for the bubble sort
             int _size = toSort.Count;
@@ -161,7 +162,7 @@ namespace CodingChallenges.SortingAlgorithms
                 Console.WriteLine("Here is the Array sorted in descending order:");
             }
 
-            Utilities.LogListContents(_result);
+            Log.ListContents(_result);
 
             //Log how many iterations were needed to fully sort the array
             Console.WriteLine($"The iterations needed to BubbleSort this array were '{_iterationCount}'");

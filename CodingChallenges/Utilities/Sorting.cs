@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CodingChallenges.SortingAlgorithms
+namespace CodingChallenges.Utilities
 {
-    static class Utilities
+    static class Sorting
     {
         public static int[] RandomIntArray (int count)
         {
@@ -44,41 +44,6 @@ namespace CodingChallenges.SortingAlgorithms
             list[indexA] = list[indexB];
             list[indexB] = temp;
             return list;
-        }
-
-        public static void LogArrayContents(int[] array)
-        {
-            foreach (int i in array)
-            {
-                Console.Write(i + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine("------------------------------------------");
-        }
-
-        public static void LogListContents(List<int> array)
-        {
-            foreach (int i in array)
-            {
-                Console.Write(i + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine("------------------------------------------");
-        }
-
-        public static void LogTitle(string str)
-        {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(str);
-            Console.ResetColor();
-
-        }
-
-        public static void LogSpacer()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("------------------------------------------");
-            Console.ResetColor();
         }
     }
 }

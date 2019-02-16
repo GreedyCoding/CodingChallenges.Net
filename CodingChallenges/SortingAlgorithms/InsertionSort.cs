@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CodingChallenges.Utilities;
 
 namespace CodingChallenges.SortingAlgorithms
 {
@@ -14,7 +15,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Logging the array contents to the console
             Console.WriteLine("This number sequence is going to be sorted:");
-            Utilities.LogArrayContents(toSort);
+            Log.ArrayContents(toSort);
 
             int _size = toSort.Length;
             int _iterations = _size * _size;
@@ -31,14 +32,14 @@ namespace CodingChallenges.SortingAlgorithms
                     {
                         if (_result[j - 1] > _result[j])
                         {
-                            Utilities.SwapElements(_result, j - 1, j);
+                            Sorting.SwapElements(_result, j - 1, j);
                         }
                     }
                     else
                     {
                         if (_result[j - 1] < _result[j])
                         {
-                            Utilities.SwapElements(_result, j - 1, j);
+                            Sorting.SwapElements(_result, j - 1, j);
                         }
                     }
                 }
@@ -55,7 +56,7 @@ namespace CodingChallenges.SortingAlgorithms
                 Console.WriteLine("Here is the Array sorted in descending order:");
             }
 
-            Utilities.LogArrayContents(_result);
+            Log.ArrayContents(_result);
 
             //Log how many iterations were needed to fully sort the array
             Console.WriteLine($"The iterations needed to SelectionSort this array were '{_iterationCount}'");
@@ -72,7 +73,7 @@ namespace CodingChallenges.SortingAlgorithms
 
             //Logging the array contents to the console
             Console.WriteLine("This number sequence is going to be sorted:");
-            Utilities.LogListContents(toSort);
+            Log.ListContents(toSort);
 
             int _size = toSort.Count;
             int _iterations = _size * _size;
@@ -94,14 +95,14 @@ namespace CodingChallenges.SortingAlgorithms
                         if (_result[j - 1] > _result[j])
                         {
                             //then swap the two elements until the element in th sorted array is smaller then the element we check
-                            Utilities.SwapElements(_result, j - 1, j);
+                            Sorting.SwapElements(_result, j - 1, j);
                         }
                     }
                     else
                     {
                         if (_result[j - 1] < _result[j])
                         {
-                            Utilities.SwapElements(_result, j - 1, j);
+                            Sorting.SwapElements(_result, j - 1, j);
                         }
                     }
 
@@ -119,7 +120,7 @@ namespace CodingChallenges.SortingAlgorithms
                 Console.WriteLine("Here is the Array sorted in descending order:");
             }
 
-            Utilities.LogListContents(_result);
+            Log.ListContents(_result);
 
             //Log how many iterations were needed to fully sort the array
             Console.WriteLine($"The iterations needed to SelectionSort this array were '{_iterationCount}'");
