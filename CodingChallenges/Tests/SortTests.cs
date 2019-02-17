@@ -6,7 +6,7 @@ using CodingChallenges.SortingAlgorithms;
 
 namespace CodingChallenges.Tests
 { 
-    internal static class Sort
+    internal static class SortTests
     {
         public static void Bubble()
         {

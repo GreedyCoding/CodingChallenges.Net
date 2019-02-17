@@ -10,14 +10,14 @@ namespace CodingChallenges
         static void Main(string[] args)
         {
             //*/ Sorting Algorithm Tests
-            Tests.Sort.Bubble();
+            Tests.SortTests.Bubble();
             Log.Line(ConsoleColor.Magenta);
-            Tests.Sort.Selection();
+            Tests.SortTests.Selection();
             Log.Line(ConsoleColor.Magenta);
-            Tests.Sort.Insertion();
-            //*/ Search Algorithm Tests
-            Log.Line(ConsoleColor.Magenta);2
-            Tests.Search.Binary();
+            Tests.SortTests.Insertion();
+            //*/ Binary Container Tests
+            Log.Line(ConsoleColor.Magenta);
+            Tests.BinaryTests.Search();
 
 
             Console.ReadLine();
